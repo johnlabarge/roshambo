@@ -1,0 +1,30 @@
+html
+        head
+                link(rel="stylesheet", href="/css/roshambo.css", type="text/css") 
+ body
+         if (typeof(Result) != 'undefined')
+                 h2.gameresult #{Message} 
+                 table.gameresult
+                     tr
+                             th.computer Computer
+                             th.player Player
+                                     
+                     tr
+                             td.computer  
+                                 img(src="/images/"+Computer+".png")
+                              td.player
+                                 img(src="/images/"+Player+".png")   
+
+        h2.gameplay You Throw?
+        
+        table.gameplay 
+                tr 
+                        td 
+                                a(href="/throw/rock")
+                                       img.throw(src="/images/rock.png")
+                        td
+                                a(href="/throw/paper")
+                                        img.throw(src="/images/paper.png")
+                        td
+                                a(href="/throw/scissors")
+                                        img.throw(src="/images/scissors.png")

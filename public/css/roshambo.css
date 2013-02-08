@@ -1,0 +1,64 @@
+img {
+	width:125px;
+	height:125px;
+}
+
+.gameresult { 
+}
+table.gameresult { 
+	border: 1px solid black;
+	padding:3px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.gameresult td { 
+	border: 1px solid blue;
+}
+
+h2.gameresult {
+	font-size:48pt;
+	text-align:center;
+}
+.gameresult .computer {
+	background-color: black;
+	color: white;
+}
+.gameresult .player {
+	background-color: white;
+	text-color: black;
+}
+img.gameplay {
+	width:75px;
+	height:75px;
+}
+table.gameplay {
+	border: 4px outset gray;
+	margin-left: auto;
+	margin-right: auto;
+	padding:2px;
+}
+
+h2.gameplay { 
+	text-align:center
+}
+td.computer {
+	background-color: black;
+	text-color: white;
+}
+td.player {
+	background-color: white;
+	text-color: black;
+}
+.throw {
+}
+.throw:hover {
+	border:2px solid red;
+}
+.hoverband {
+
+}
+
+.throw_widget {
+
+}
+   

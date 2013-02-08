@@ -7,23 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E52B288B16C3EAE7008BF6E9 /* Splash.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B288A16C3EAE7008BF6E9 /* Splash.m */; };
+		E52B288E16C4431E008BF6E9 /* PlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B288D16C4431E008BF6E9 /* PlayVC.m */; };
+		E52B289116C4440A008BF6E9 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B289016C4440A008BF6E9 /* HistoryVC.m */; };
+		E52B289416C44451008BF6E9 /* RoshamboClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B289316C44451008BF6E9 /* RoshamboClient.m */; };
+		E52B289B16C48E89008BF6E9 /* jlb.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B289616C48E89008BF6E9 /* jlb.png */; };
+		E52B289C16C48E89008BF6E9 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B289716C48E89008BF6E9 /* paper.png */; };
+		E52B289D16C48E89008BF6E9 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B289816C48E89008BF6E9 /* rock.png */; };
+		E52B289E16C48E89008BF6E9 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B289916C48E89008BF6E9 /* scissors.png */; };
+		E52B289F16C48E89008BF6E9 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B289A16C48E89008BF6E9 /* splash.png */; };
+		E52B28A116C530B5008BF6E9 /* scissors2.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B28A016C530B5008BF6E9 /* scissors2.png */; };
+		E52B28A416C536EC008BF6E9 /* ShakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B28A316C536EC008BF6E9 /* ShakeView.m */; };
+		E52B28A616C564CD008BF6E9 /* throw.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B28A516C564CD008BF6E9 /* throw.png */; };
+		E52B28A816C56807008BF6E9 /* throwdown.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B28A716C56806008BF6E9 /* throwdown.png */; };
+		E52B28AB16C56A65008BF6E9 /* PreviousGames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E52B28A916C56A65008BF6E9 /* PreviousGames.xcdatamodeld */; };
+		E52B28B016C56D70008BF6E9 /* PreviousGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B28AF16C56D70008BF6E9 /* PreviousGame.m */; };
+		E52B28B316C56DD4008BF6E9 /* PreviousGames.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B28B216C56DD4008BF6E9 /* PreviousGames.m */; };
+		E52B28B616C56E20008BF6E9 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B28B516C56E1F008BF6E9 /* Game.m */; };
+		E52B28BC16C58095008BF6E9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52B28BB16C58095008BF6E9 /* CoreData.framework */; };
 		E5E8FDA016C2CAC20040E909 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8FD9F16C2CAC20040E909 /* UIKit.framework */; };
 		E5E8FDA216C2CAC20040E909 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8FDA116C2CAC20040E909 /* Foundation.framework */; };
 		E5E8FDA416C2CAC20040E909 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8FDA316C2CAC20040E909 /* CoreGraphics.framework */; };
 		E5E8FDAA16C2CAC20040E909 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDA816C2CAC20040E909 /* InfoPlist.strings */; };
 		E5E8FDAC16C2CAC20040E909 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8FDAB16C2CAC20040E909 /* main.m */; };
-		E5E8FDB016C2CAC20040E909 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8FDAF16C2CAC20040E909 /* AppDelegate.m */; };
+		E5E8FDB016C2CAC20040E909 /* RoshamboAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8FDAF16C2CAC20040E909 /* RoshamboAppDelegate.m */; };
 		E5E8FDB216C2CAC20040E909 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB116C2CAC20040E909 /* Default.png */; };
 		E5E8FDB416C2CAC20040E909 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB316C2CAC20040E909 /* Default@2x.png */; };
 		E5E8FDB616C2CAC20040E909 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB516C2CAC20040E909 /* Default-568h@2x.png */; };
-		E5E8FDB916C2CAC20040E909 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB716C2CAC20040E909 /* MainStoryboard_iPhone.storyboard */; };
-		E5E8FDBC16C2CAC20040E909 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDBA16C2CAC20040E909 /* MainStoryboard_iPad.storyboard */; };
+		E5E8FDB916C2CAC20040E909 /* roshambo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB716C2CAC20040E909 /* roshambo.storyboard */; };
 		E5E8FDBF16C2CAC20040E909 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8FDBE16C2CAC20040E909 /* ViewController.m */; };
 		E5E8FDC716C2CAC30040E909 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8FDC616C2CAC30040E909 /* SenTestingKit.framework */; };
 		E5E8FDC816C2CAC30040E909 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8FD9F16C2CAC20040E909 /* UIKit.framework */; };
 		E5E8FDC916C2CAC30040E909 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8FDA116C2CAC20040E909 /* Foundation.framework */; };
 		E5E8FDD116C2CAC30040E909 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDCF16C2CAC30040E909 /* InfoPlist.strings */; };
 		E5E8FDD416C2CAC30040E909 /* roshamboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8FDD316C2CAC30040E909 /* roshamboTests.m */; };
+		E5E8FDDE16C2EE840040E909 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDDD16C2EE840040E909 /* splash.png */; };
+		E5E8FDE116C308090040E909 /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8FDE016C308090040E909 /* TransitionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +56,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E52B288916C3EAE7008BF6E9 /* Splash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Splash.h; sourceTree = "<group>"; };
+		E52B288A16C3EAE7008BF6E9 /* Splash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Splash.m; sourceTree = "<group>"; };
+		E52B288C16C4431E008BF6E9 /* PlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVC.h; sourceTree = "<group>"; };
+		E52B288D16C4431E008BF6E9 /* PlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVC.m; sourceTree = "<group>"; };
+		E52B288F16C4440A008BF6E9 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
+		E52B289016C4440A008BF6E9 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
+		E52B289216C44451008BF6E9 /* RoshamboClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoshamboClient.h; sourceTree = "<group>"; };
+		E52B289316C44451008BF6E9 /* RoshamboClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoshamboClient.m; sourceTree = "<group>"; };
+		E52B289616C48E89008BF6E9 /* jlb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jlb.png; sourceTree = "<group>"; };
+		E52B289716C48E89008BF6E9 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		E52B289816C48E89008BF6E9 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		E52B289916C48E89008BF6E9 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
+		E52B289A16C48E89008BF6E9 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		E52B28A016C530B5008BF6E9 /* scissors2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors2.png; sourceTree = "<group>"; };
+		E52B28A216C536EC008BF6E9 /* ShakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeView.h; sourceTree = "<group>"; };
+		E52B28A316C536EC008BF6E9 /* ShakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeView.m; sourceTree = "<group>"; };
+		E52B28A516C564CD008BF6E9 /* throw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = throw.png; path = images/throw.png; sourceTree = SOURCE_ROOT; };
+		E52B28A716C56806008BF6E9 /* throwdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = throwdown.png; path = images/throwdown.png; sourceTree = SOURCE_ROOT; };
+		E52B28AA16C56A65008BF6E9 /* PreviousGames.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PreviousGames.xcdatamodel; sourceTree = "<group>"; };
+		E52B28AC16C56CBE008BF6E9 /* PreviousGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviousGame.h; sourceTree = "<group>"; };
+		E52B28AF16C56D70008BF6E9 /* PreviousGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviousGame.m; sourceTree = "<group>"; };
+		E52B28B116C56DD4008BF6E9 /* PreviousGames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviousGames.h; sourceTree = "<group>"; };
+		E52B28B216C56DD4008BF6E9 /* PreviousGames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviousGames.m; sourceTree = "<group>"; };
+		E52B28B416C56E1F008BF6E9 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		E52B28B516C56E1F008BF6E9 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		E52B28BB16C58095008BF6E9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E5E8FD9B16C2CAC20040E909 /* roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E8FD9F16C2CAC20040E909 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E5E8FDA116C2CAC20040E909 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,13 +90,12 @@
 		E5E8FDA916C2CAC20040E909 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E5E8FDAB16C2CAC20040E909 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5E8FDAD16C2CAC20040E909 /* roshambo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "roshambo-Prefix.pch"; sourceTree = "<group>"; };
-		E5E8FDAE16C2CAC20040E909 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E5E8FDAF16C2CAC20040E909 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5E8FDAE16C2CAC20040E909 /* RoshamboAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoshamboAppDelegate.h; sourceTree = "<group>"; };
+		E5E8FDAF16C2CAC20040E909 /* RoshamboAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoshamboAppDelegate.m; sourceTree = "<group>"; };
 		E5E8FDB116C2CAC20040E909 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E5E8FDB316C2CAC20040E909 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E5E8FDB516C2CAC20040E909 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E5E8FDB816C2CAC20040E909 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		E5E8FDBB16C2CAC20040E909 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E5E8FDB816C2CAC20040E909 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/roshambo.storyboard; sourceTree = "<group>"; };
 		E5E8FDBD16C2CAC20040E909 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E5E8FDBE16C2CAC20040E909 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E5E8FDC516C2CAC30040E909 /* roshamboTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roshamboTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +104,9 @@
 		E5E8FDD016C2CAC30040E909 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E5E8FDD216C2CAC30040E909 /* roshamboTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = roshamboTests.h; sourceTree = "<group>"; };
 		E5E8FDD316C2CAC30040E909 /* roshamboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = roshamboTests.m; sourceTree = "<group>"; };
+		E5E8FDDD16C2EE840040E909 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = images/splash.png; sourceTree = SOURCE_ROOT; };
+		E5E8FDDF16C308090040E909 /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		E5E8FDE016C308090040E909 /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52B28BC16C58095008BF6E9 /* CoreData.framework in Frameworks */,
 				E5E8FDA016C2CAC20040E909 /* UIKit.framework in Frameworks */,
 				E5E8FDA216C2CAC20040E909 /* Foundation.framework in Frameworks */,
 				E5E8FDA416C2CAC20040E909 /* CoreGraphics.framework in Frameworks */,
@@ -86,9 +134,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E52B289516C48E89008BF6E9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E52B28A016C530B5008BF6E9 /* scissors2.png */,
+				E52B289616C48E89008BF6E9 /* jlb.png */,
+				E52B289716C48E89008BF6E9 /* paper.png */,
+				E52B289816C48E89008BF6E9 /* rock.png */,
+				E52B289916C48E89008BF6E9 /* scissors.png */,
+				E52B289A16C48E89008BF6E9 /* splash.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		E5E8FD9016C2CAC20040E909 = {
 			isa = PBXGroup;
 			children = (
+				E52B28BB16C58095008BF6E9 /* CoreData.framework */,
+				E52B288F16C4440A008BF6E9 /* HistoryVC.h */,
+				E52B289016C4440A008BF6E9 /* HistoryVC.m */,
+				E52B288C16C4431E008BF6E9 /* PlayVC.h */,
+				E52B288D16C4431E008BF6E9 /* PlayVC.m */,
+				E52B289516C48E89008BF6E9 /* images */,
 				E5E8FDA516C2CAC20040E909 /* roshambo */,
 				E5E8FDCC16C2CAC30040E909 /* roshamboTests */,
 				E5E8FD9E16C2CAC20040E909 /* Frameworks */,
@@ -119,13 +186,30 @@
 		E5E8FDA516C2CAC20040E909 /* roshambo */ = {
 			isa = PBXGroup;
 			children = (
-				E5E8FDAE16C2CAC20040E909 /* AppDelegate.h */,
-				E5E8FDAF16C2CAC20040E909 /* AppDelegate.m */,
-				E5E8FDB716C2CAC20040E909 /* MainStoryboard_iPhone.storyboard */,
-				E5E8FDBA16C2CAC20040E909 /* MainStoryboard_iPad.storyboard */,
+				E5E8FDAE16C2CAC20040E909 /* RoshamboAppDelegate.h */,
+				E5E8FDAF16C2CAC20040E909 /* RoshamboAppDelegate.m */,
+				E5E8FDB716C2CAC20040E909 /* roshambo.storyboard */,
+				E52B28A916C56A65008BF6E9 /* PreviousGames.xcdatamodeld */,
+				E52B28AC16C56CBE008BF6E9 /* PreviousGame.h */,
+				E52B28AF16C56D70008BF6E9 /* PreviousGame.m */,
+				E52B28B116C56DD4008BF6E9 /* PreviousGames.h */,
+				E52B28B216C56DD4008BF6E9 /* PreviousGames.m */,
+				E52B28B416C56E1F008BF6E9 /* Game.h */,
+				E52B28B516C56E1F008BF6E9 /* Game.m */,
+				E52B28A716C56806008BF6E9 /* throwdown.png */,
+				E52B28A516C564CD008BF6E9 /* throw.png */,
+				E52B28A216C536EC008BF6E9 /* ShakeView.h */,
+				E52B28A316C536EC008BF6E9 /* ShakeView.m */,
+				E52B288916C3EAE7008BF6E9 /* Splash.h */,
+				E52B288A16C3EAE7008BF6E9 /* Splash.m */,
+				E5E8FDDF16C308090040E909 /* TransitionController.h */,
+				E5E8FDE016C308090040E909 /* TransitionController.m */,
+				E5E8FDDD16C2EE840040E909 /* splash.png */,
 				E5E8FDBD16C2CAC20040E909 /* ViewController.h */,
 				E5E8FDBE16C2CAC20040E909 /* ViewController.m */,
 				E5E8FDA616C2CAC20040E909 /* Supporting Files */,
+				E52B289216C44451008BF6E9 /* RoshamboClient.h */,
+				E52B289316C44451008BF6E9 /* RoshamboClient.m */,
 			);
 			path = roshambo;
 			sourceTree = "<group>";
@@ -238,8 +322,16 @@
 				E5E8FDB216C2CAC20040E909 /* Default.png in Resources */,
 				E5E8FDB416C2CAC20040E909 /* Default@2x.png in Resources */,
 				E5E8FDB616C2CAC20040E909 /* Default-568h@2x.png in Resources */,
-				E5E8FDB916C2CAC20040E909 /* MainStoryboard_iPhone.storyboard in Resources */,
-				E5E8FDBC16C2CAC20040E909 /* MainStoryboard_iPad.storyboard in Resources */,
+				E5E8FDB916C2CAC20040E909 /* roshambo.storyboard in Resources */,
+				E5E8FDDE16C2EE840040E909 /* splash.png in Resources */,
+				E52B289B16C48E89008BF6E9 /* jlb.png in Resources */,
+				E52B289C16C48E89008BF6E9 /* paper.png in Resources */,
+				E52B289D16C48E89008BF6E9 /* rock.png in Resources */,
+				E52B289E16C48E89008BF6E9 /* scissors.png in Resources */,
+				E52B289F16C48E89008BF6E9 /* splash.png in Resources */,
+				E52B28A116C530B5008BF6E9 /* scissors2.png in Resources */,
+				E52B28A616C564CD008BF6E9 /* throw.png in Resources */,
+				E52B28A816C56807008BF6E9 /* throwdown.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +367,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E8FDAC16C2CAC20040E909 /* main.m in Sources */,
-				E5E8FDB016C2CAC20040E909 /* AppDelegate.m in Sources */,
+				E5E8FDB016C2CAC20040E909 /* RoshamboAppDelegate.m in Sources */,
 				E5E8FDBF16C2CAC20040E909 /* ViewController.m in Sources */,
+				E5E8FDE116C308090040E909 /* TransitionController.m in Sources */,
+				E52B288B16C3EAE7008BF6E9 /* Splash.m in Sources */,
+				E52B288E16C4431E008BF6E9 /* PlayVC.m in Sources */,
+				E52B289116C4440A008BF6E9 /* HistoryVC.m in Sources */,
+				E52B289416C44451008BF6E9 /* RoshamboClient.m in Sources */,
+				E52B28A416C536EC008BF6E9 /* ShakeView.m in Sources */,
+				E52B28AB16C56A65008BF6E9 /* PreviousGames.xcdatamodeld in Sources */,
+				E52B28B016C56D70008BF6E9 /* PreviousGame.m in Sources */,
+				E52B28B316C56DD4008BF6E9 /* PreviousGames.m in Sources */,
+				E52B28B616C56E20008BF6E9 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,20 +409,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E5E8FDB716C2CAC20040E909 /* MainStoryboard_iPhone.storyboard */ = {
+		E5E8FDB716C2CAC20040E909 /* roshambo.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E5E8FDB816C2CAC20040E909 /* en */,
 			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		E5E8FDBA16C2CAC20040E909 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5E8FDBB16C2CAC20040E909 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
+			name = roshambo.storyboard;
 			sourceTree = "<group>";
 		};
 		E5E8FDCF16C2CAC30040E909 /* InfoPlist.strings */ = {
@@ -393,6 +487,7 @@
 				GCC_PREFIX_HEADER = "roshambo/roshambo-Prefix.pch";
 				INFOPLIST_FILE = "roshambo/roshambo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,6 +499,7 @@
 				GCC_PREFIX_HEADER = "roshambo/roshambo-Prefix.pch";
 				INFOPLIST_FILE = "roshambo/roshambo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +557,7 @@
 				E5E8FDD916C2CAC30040E909 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5E8FDDA16C2CAC30040E909 /* Build configuration list for PBXNativeTarget "roshamboTests" */ = {
 			isa = XCConfigurationList;
@@ -469,8 +566,22 @@
 				E5E8FDDC16C2CAC30040E909 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E52B28A916C56A65008BF6E9 /* PreviousGames.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E52B28AA16C56A65008BF6E9 /* PreviousGames.xcdatamodel */,
+			);
+			currentVersion = E52B28AA16C56A65008BF6E9 /* PreviousGames.xcdatamodel */;
+			path = PreviousGames.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E5E8FD9216C2CAC20040E909 /* Project object */;
 }
