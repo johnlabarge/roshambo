@@ -48,7 +48,7 @@ app.get '/', (req,res) ->
    res.render('roshambo',{})
 
 app.get '/throw.json/:sign', (req,resp) ->
-   throwJson(req.params.sign,res)
+   throwJson(req.params.sign,resp)
 
 app.get '/throw.json',(req,resp) ->
    throwJson(req.query.sign,resp)
