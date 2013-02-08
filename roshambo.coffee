@@ -51,7 +51,7 @@ app.get '/throw.json/:sign', (req,resp) ->
    throwJson(req.params.sign,res)
 
 app.get '/throw.json',(req,resp) ->
-   throwJson(req.query.sign,res)
+   throwJson(req.query.sign,resp)
 
 throwJson = (player,res) ->
    result = game.play(player)
