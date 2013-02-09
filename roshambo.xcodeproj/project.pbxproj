@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		E519A5D016C5960B004E9093 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E519A5CF16C5960B004E9093 /* GameResultViewController.m */; };
 		E52103A616C68F5300D8AB9A /* roshambo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52103A416C68F5300D8AB9A /* roshambo.storyboard */; };
+		E52103A916C6942000D8AB9A /* PlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E52103A816C6942000D8AB9A /* PlayVC.m */; };
 		E52B288B16C3EAE7008BF6E9 /* Splash.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B288A16C3EAE7008BF6E9 /* Splash.m */; };
-		E52B288E16C4431E008BF6E9 /* PlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B288D16C4431E008BF6E9 /* PlayVC.m */; };
-		E52B289116C4440A008BF6E9 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B289016C4440A008BF6E9 /* HistoryVC.m */; };
 		E52B289416C44451008BF6E9 /* RoshamboClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B289316C44451008BF6E9 /* RoshamboClient.m */; };
 		E52B289B16C48E89008BF6E9 /* jlb.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B289616C48E89008BF6E9 /* jlb.png */; };
 		E52B289C16C48E89008BF6E9 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = E52B289716C48E89008BF6E9 /* paper.png */; };
@@ -62,12 +61,10 @@
 		E519A5CE16C5960B004E9093 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
 		E519A5CF16C5960B004E9093 /* GameResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResultViewController.m; sourceTree = "<group>"; };
 		E52103A516C68F5300D8AB9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/roshambo.storyboard; sourceTree = "<group>"; };
+		E52103A716C6942000D8AB9A /* PlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVC.h; sourceTree = "<group>"; };
+		E52103A816C6942000D8AB9A /* PlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVC.m; sourceTree = "<group>"; };
 		E52B288916C3EAE7008BF6E9 /* Splash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Splash.h; sourceTree = "<group>"; };
 		E52B288A16C3EAE7008BF6E9 /* Splash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Splash.m; sourceTree = "<group>"; };
-		E52B288C16C4431E008BF6E9 /* PlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVC.h; sourceTree = "<group>"; };
-		E52B288D16C4431E008BF6E9 /* PlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVC.m; sourceTree = "<group>"; };
-		E52B288F16C4440A008BF6E9 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
-		E52B289016C4440A008BF6E9 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
 		E52B289216C44451008BF6E9 /* RoshamboClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoshamboClient.h; sourceTree = "<group>"; };
 		E52B289316C44451008BF6E9 /* RoshamboClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoshamboClient.m; sourceTree = "<group>"; };
 		E52B289616C48E89008BF6E9 /* jlb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jlb.png; sourceTree = "<group>"; };
@@ -159,10 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				E52B28BB16C58095008BF6E9 /* CoreData.framework */,
-				E52B288F16C4440A008BF6E9 /* HistoryVC.h */,
-				E52B289016C4440A008BF6E9 /* HistoryVC.m */,
-				E52B288C16C4431E008BF6E9 /* PlayVC.h */,
-				E52B288D16C4431E008BF6E9 /* PlayVC.m */,
 				E52B289516C48E89008BF6E9 /* images */,
 				E5E8FDA516C2CAC20040E909 /* roshambo */,
 				E5E8FDCC16C2CAC30040E909 /* roshamboTests */,
@@ -194,6 +187,8 @@
 		E5E8FDA516C2CAC20040E909 /* roshambo */ = {
 			isa = PBXGroup;
 			children = (
+				E52103A716C6942000D8AB9A /* PlayVC.h */,
+				E52103A816C6942000D8AB9A /* PlayVC.m */,
 				E5E8FDAE16C2CAC20040E909 /* RoshamboAppDelegate.h */,
 				E5E8FDAF16C2CAC20040E909 /* RoshamboAppDelegate.m */,
 				E52B28A916C56A65008BF6E9 /* PreviousGames.xcdatamodeld */,
@@ -385,8 +380,6 @@
 				E5E8FDBF16C2CAC20040E909 /* ViewController.m in Sources */,
 				E5E8FDE116C308090040E909 /* TransitionController.m in Sources */,
 				E52B288B16C3EAE7008BF6E9 /* Splash.m in Sources */,
-				E52B288E16C4431E008BF6E9 /* PlayVC.m in Sources */,
-				E52B289116C4440A008BF6E9 /* HistoryVC.m in Sources */,
 				E52B289416C44451008BF6E9 /* RoshamboClient.m in Sources */,
 				E52B28A416C536EC008BF6E9 /* ShakeView.m in Sources */,
 				E52B28AB16C56A65008BF6E9 /* PreviousGames.xcdatamodeld in Sources */,
@@ -395,6 +388,7 @@
 				E52B28B616C56E20008BF6E9 /* Game.m in Sources */,
 				E519A5D016C5960B004E9093 /* GameResultViewController.m in Sources */,
 				E5CAC4E516C5C2E2000F1822 /* PrevGameCell.m in Sources */,
+				E52103A916C6942000D8AB9A /* PlayVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
