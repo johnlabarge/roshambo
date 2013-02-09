@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PrevGameCell.h"
+#import "PreviousGame.h"
+#import "RoshamboAppDelegate.h"
 
 @interface PreviousGames : UITableViewController
 
+@property (nonatomic, strong) NSArray * previousGames; 
 @end

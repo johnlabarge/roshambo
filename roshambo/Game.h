@@ -12,5 +12,4 @@
 
 @interface Game : NSObject
 -(void)throw:(NSString *)player onResult:(void(^)(NSDictionary *))gameResult onError:(void(^)(NSString *))errorOccurred;
-@property (nonatomic, strong) NSString * computerHost;
 @end

@@ -17,8 +17,11 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
+
     if (self) {
         // Custom initialization
+               
+
     }
     return self;
 }
@@ -26,6 +29,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    RoshamboAppDelegate * roshambo = (RoshamboAppDelegate *) [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext * moc = [roshambo managedObjectContext];
+
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"PreviousGame"];
+    NSError *error;
+    self.previousGames = [moc executeFetchRequest:request error:&error];
+    
+    NSLog(@"***** found %d previous games in db",self.previousGames.count);
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -44,22 +55,41 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+  return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
+    if (section == 0) {
+        return [self.previousGames count];
+    }
     return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    PrevGameCell *cell = (PrevGameCell * )[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PrevGameCell" owner:self options:nil];
+    	    cell = (PrevGameCell *)[nib objectAtIndex:0];
+    }
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    
+    PreviousGame * prevGame = [self.previousGames objectAtIndex:[indexPath indexAtPosition:1]];
+    NSLog(@"prevGame = %@ %@ %@ %@", [dateFormatter stringFromDate:prevGame.date], prevGame.player, prevGame.computer, prevGame.result);
+    cell.winLoseOrTieLabel.text = prevGame.result;
+    cell.dateLabel.text = [dateFormatter stringFromDate:prevGame.date];
+    [cell.playerThrowImage setImage:[UIImage imageNamed:[prevGame.player stringByAppendingString:@".png"]]];
+    [cell.computerThrowImage setImage:[UIImage imageNamed:[prevGame.computer stringByAppendingString:@".png"]]];
+    
+
     
     // Configure the cell...
     
@@ -117,5 +147,8 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
-
+-(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    return 155.0;
+}
 @end

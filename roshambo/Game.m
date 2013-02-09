@@ -23,11 +23,11 @@
     NSURLRequest * req = [NSURLRequest requestWithURL:urlForThrow];
     NSOperationQueue * queue = [[NSOperationQueue alloc] init];
     __block Game *blocksafeSelf = self;
-[NSURLConnection sendAsynchronousRequest:req queue:queue completionHandler:^(NSURLResponse * resp, NSData * data, NSError * error) {
+    [NSURLConnection sendAsynchronousRequest:req queue:queue completionHandler:^(NSURLResponse * resp, NSData * data, NSError * error) {
         if (data.length > 0 && error == nil){
             NSError * error;
             NSDictionary * result = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            if (error != nil) {
+            if (error == nil) {
                 [blocksafeSelf saveGame:result];
                 gameResult(result);
             } else {
@@ -44,7 +44,7 @@
 -(NSURL *) urlForThrow:(NSString *) throw
 {
    NSString *host = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"host"];
-   return [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/%@",host,throw]];
+   return [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/throw.json/%@",host,throw]];
 }
 
 -(void) saveGame:(NSDictionary *)gameResult
