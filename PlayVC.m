@@ -127,7 +127,7 @@
     self.resultView = [storyboard instantiateViewControllerWithIdentifier:@"GameResult"];
     NSString * theResult = [result objectForKey:@"Result"];
     
-    NSString * playerThrow = [result objectForKey:@"Player"];
+    NSString * thePlayerThrow = [result objectForKey:@"Player"];
     NSString * computerThrow = [result objectForKey:@"Computer"];
     NSLog(@"player:%@ computer%@ result:%@",playerThrow, computerThrow, theResult);
     [self presentViewController:self.resultView animated:YES completion:nil];
@@ -137,7 +137,7 @@
         self.resultView.winnerLabel.text = @"You";
         self.resultView.loserLabel.text = @"Computer";
         self.resultView.beatsOrTies.text=@"beats";
-        [self.resultView.winnerThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",playerThrow]]];
+        [self.resultView.winnerThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",thePlayerThrow]]];
         [self.resultView.loserThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",computerThrow]]];
       
     } else if ([theResult isEqualToString:@"lose"]){
@@ -146,14 +146,14 @@
         self.resultView.loserLabel.text=@"You";
         self.resultView.beatsOrTies.text=@"beats";
         [self.resultView.winnerThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",computerThrow]]];
-        [self.resultView.loserThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",playerThrow]]];
+        [self.resultView.loserThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",thePlayerThrow]]];
     } else {
         self.resultView.resultLabel.text=@"Tie.";
         self.resultView.winnerLabel.text=@"Computer";
         self.resultView.loserLabel.text=@"You";
         self.resultView.beatsOrTies.text=@"ties";
         [self.resultView.winnerThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",computerThrow]]];
-        [self.resultView.loserThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",playerThrow]]];
+        [self.resultView.loserThrow setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",thePlayerThrow]]];
     }
 
 

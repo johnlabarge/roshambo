@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E519A5D016C5960B004E9093 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E519A5CF16C5960B004E9093 /* GameResultViewController.m */; };
+		E52103A616C68F5300D8AB9A /* roshambo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52103A416C68F5300D8AB9A /* roshambo.storyboard */; };
 		E52B288B16C3EAE7008BF6E9 /* Splash.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B288A16C3EAE7008BF6E9 /* Splash.m */; };
 		E52B288E16C4431E008BF6E9 /* PlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B288D16C4431E008BF6E9 /* PlayVC.m */; };
 		E52B289116C4440A008BF6E9 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E52B289016C4440A008BF6E9 /* HistoryVC.m */; };
@@ -37,7 +38,6 @@
 		E5E8FDB216C2CAC20040E909 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB116C2CAC20040E909 /* Default.png */; };
 		E5E8FDB416C2CAC20040E909 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB316C2CAC20040E909 /* Default@2x.png */; };
 		E5E8FDB616C2CAC20040E909 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB516C2CAC20040E909 /* Default-568h@2x.png */; };
-		E5E8FDB916C2CAC20040E909 /* roshambo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E8FDB716C2CAC20040E909 /* roshambo.storyboard */; };
 		E5E8FDBF16C2CAC20040E909 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8FDBE16C2CAC20040E909 /* ViewController.m */; };
 		E5E8FDC716C2CAC30040E909 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8FDC616C2CAC30040E909 /* SenTestingKit.framework */; };
 		E5E8FDC816C2CAC30040E909 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8FD9F16C2CAC20040E909 /* UIKit.framework */; };
@@ -61,6 +61,7 @@
 /* Begin PBXFileReference section */
 		E519A5CE16C5960B004E9093 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
 		E519A5CF16C5960B004E9093 /* GameResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResultViewController.m; sourceTree = "<group>"; };
+		E52103A516C68F5300D8AB9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/roshambo.storyboard; sourceTree = "<group>"; };
 		E52B288916C3EAE7008BF6E9 /* Splash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Splash.h; sourceTree = "<group>"; };
 		E52B288A16C3EAE7008BF6E9 /* Splash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Splash.m; sourceTree = "<group>"; };
 		E52B288C16C4431E008BF6E9 /* PlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVC.h; sourceTree = "<group>"; };
@@ -103,7 +104,6 @@
 		E5E8FDB116C2CAC20040E909 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E5E8FDB316C2CAC20040E909 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E5E8FDB516C2CAC20040E909 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E5E8FDB816C2CAC20040E909 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/roshambo.storyboard; sourceTree = "<group>"; };
 		E5E8FDBD16C2CAC20040E909 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E5E8FDBE16C2CAC20040E909 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E5E8FDC516C2CAC30040E909 /* roshamboTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roshamboTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,7 +196,6 @@
 			children = (
 				E5E8FDAE16C2CAC20040E909 /* RoshamboAppDelegate.h */,
 				E5E8FDAF16C2CAC20040E909 /* RoshamboAppDelegate.m */,
-				E5E8FDB716C2CAC20040E909 /* roshambo.storyboard */,
 				E52B28A916C56A65008BF6E9 /* PreviousGames.xcdatamodeld */,
 				E52B28AC16C56CBE008BF6E9 /* PreviousGame.h */,
 				E52B28AF16C56D70008BF6E9 /* PreviousGame.m */,
@@ -231,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E5E8FDA716C2CAC20040E909 /* roshambo-Info.plist */,
+				E52103A416C68F5300D8AB9A /* roshambo.storyboard */,
 				E5E8FDA816C2CAC20040E909 /* InfoPlist.strings */,
 				E5E8FDAB16C2CAC20040E909 /* main.m */,
 				E5E8FDAD16C2CAC20040E909 /* roshambo-Prefix.pch */,
@@ -335,7 +335,6 @@
 				E5E8FDB216C2CAC20040E909 /* Default.png in Resources */,
 				E5E8FDB416C2CAC20040E909 /* Default@2x.png in Resources */,
 				E5E8FDB616C2CAC20040E909 /* Default-568h@2x.png in Resources */,
-				E5E8FDB916C2CAC20040E909 /* roshambo.storyboard in Resources */,
 				E5E8FDDE16C2EE840040E909 /* splash.png in Resources */,
 				E52B289B16C48E89008BF6E9 /* jlb.png in Resources */,
 				E52B289C16C48E89008BF6E9 /* paper.png in Resources */,
@@ -346,6 +345,7 @@
 				E52B28A616C564CD008BF6E9 /* throw.png in Resources */,
 				E52B28A816C56807008BF6E9 /* throwdown.png in Resources */,
 				E5CAC4E816C5C31D000F1822 /* PrevGameCell.xib in Resources */,
+				E52103A616C68F5300D8AB9A /* roshambo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,20 +417,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E52103A416C68F5300D8AB9A /* roshambo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52103A516C68F5300D8AB9A /* en */,
+			);
+			name = roshambo.storyboard;
+			sourceTree = "<group>";
+		};
 		E5E8FDA816C2CAC20040E909 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E5E8FDA916C2CAC20040E909 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E5E8FDB716C2CAC20040E909 /* roshambo.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5E8FDB816C2CAC20040E909 /* en */,
-			);
-			name = roshambo.storyboard;
 			sourceTree = "<group>";
 		};
 		E5E8FDCF16C2CAC30040E909 /* InfoPlist.strings */ = {

@@ -28,21 +28,27 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    RoshamboAppDelegate * roshambo = (RoshamboAppDelegate *) [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext * moc = [roshambo managedObjectContext];
-
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"PreviousGame"];
-    NSError *error;
-    self.previousGames = [moc executeFetchRequest:request error:&error];
-    
-    NSLog(@"***** found %d previous games in db",self.previousGames.count);
-
-    // Uncomment the following line to preserve selection between presentations.
+       // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewDidLoad];
+    RoshamboAppDelegate * roshambo = (RoshamboAppDelegate *) [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext * moc = [roshambo managedObjectContext];
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"PreviousGame"];
+    NSError *error;
+    self.previousGames = [moc executeFetchRequest:request error:&error];
+    
+    [self.tableView reloadData];
+    NSLog(@"***** found %d previous games in db",self.previousGames.count);
+    
+
 }
 
 - (void)didReceiveMemoryWarning
